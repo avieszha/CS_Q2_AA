@@ -2,13 +2,17 @@
 ---
 ## Sorting Elements into The Four Houses of Chemistry
 ---
-Favicon:
+**Favicon:**
+
+---
 
 **Description:**
 
 PeriodiCastle is a whimsical and study-friendly website that transforms the periodic table into a Harry Potter-style design. Each element is “sorted” into one of four Houses of Chemistry — Gryffindor (s-block), Slytherin (p-block), Hufflepuff (d-block), and Ravenclaw (f-block) in order to aid students and learners in remembering the structure of the blocks, the trends, and their respective properties. Users can hover on an element to reveal information about it or even tap a sorting hat to classify an element by name, symbol, or property (e.g., electronegativity, metallic character). After learning, they may also challenge themselves in Quiz Mode.
 
 Beyond the name, PeriodiCastle focuses on clear information propagation, accessible User Interface (UI), and modular JavaScript (JS) for search, sorting, and quizzes. Other unique features include audio toggles that let users play either the Harry Potter theme song or the Periodic Table song while studying, and a Lumos switch offering light/dark mode for comfort.
+
+---
 
 **Webpage Breakdown:**
 * **Home:** This will contain the periodic table itself which would be designed with a Harry Potter theme. Above it, there will be a short description of the website itself, while below, there will be paragraphs regarding the history of the periodic table, but presented in a “Harry Potter-like” way. There will also be other unique settings and an efficient navigation bar.
@@ -21,6 +25,10 @@ Beyond the name, PeriodiCastle focuses on clear information propagation, accessi
 * **P7 (Chamber of Secrets):** This is more of a creative page (wikipedia-like) with short articles about chemistry seen in the Harry Potter world. For instance, there could be one about acids or bases in potion analogies or one about the chemistry they used for props. 
 * **P8 (About Us):** This will be a simple Harry Potter-themed about us page.
 
+---
+
 As of now, there are two particular webpages that we are going to use JS for. Firstly would be Sorting Hat — certain inputs will cause different outputs through a decision statement. The other use for it would be for the O.W.L.s page, wherein JS script will be used for the quiz itself, as well as other unique features.
 
-**Wireframe**
+---
+
+**Wireframe:**
