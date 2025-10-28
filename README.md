@@ -4,7 +4,7 @@
 
 ### Favicon: 
 
-(![Favicon](proposal/Favicon.png))
+![Favicon](proposal/Favicon.png)
 
 ---
 
