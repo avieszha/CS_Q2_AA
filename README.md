@@ -2,11 +2,13 @@
 
 ## Sorting Elements into The Four Houses of Chemistry
 
-**Favicon:**
+### Favicon: 
+
+(![Favicon](proposal/Favicon.png))
 
 ---
 
-**Description:**
+### Description:
 
 PeriodiCastle is a whimsical and study-friendly website that transforms the periodic table into a Harry Potter-style design. Each element is “sorted” into one of four Houses of Chemistry — Gryffindor (s-block), Slytherin (p-block), Hufflepuff (d-block), and Ravenclaw (f-block) in order to aid students and learners in remembering the structure of the blocks, the trends, and their respective properties. Users can hover on an element to reveal information about it or even tap a sorting hat to classify an element by name, symbol, or property (e.g., electronegativity, metallic character). After learning, they may also challenge themselves in Quiz Mode.
 
@@ -14,7 +16,7 @@ Beyond the name, PeriodiCastle focuses on clear information propagation, accessi
 
 ---
 
-**Webpage Breakdown:**
+### Webpage Breakdown:
 * **Home:** This will contain the periodic table itself which would be designed with a Harry Potter theme. Above it, there will be a short description of the website itself, while below, there will be paragraphs regarding the history of the periodic table, but presented in a “Harry Potter-like” way. There will also be other unique settings and an efficient navigation bar.
 * **P1 (Gryffindor):** This part will contain all the elements that are part of the Gryffindor house (s-block). There will also be fun facts about the elements and the people known for discovering them.
 * **P2 (Slytherin):** This part will contain all the elements that are part of the Slytherin house (p-block). There will also be fun facts about the elements and the people.
@@ -31,4 +33,4 @@ As of now, there are two particular webpages that we are going to use JS for. Fi
 
 ---
 
-**Wireframe:**
+### Wireframe:
