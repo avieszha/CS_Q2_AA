@@ -17,20 +17,42 @@ Beyond the name, PeriodiCastle focuses on clear information propagation, accessi
 ---
 
 ### Webpage Breakdown:
-* **Home:** This will contain the periodic table itself which would be designed with a Harry Potter theme. Above it, there will be a short description of the website itself, while below, there will be paragraphs regarding the history of the periodic table, but presented in a “Harry Potter-like” way. There will also be other unique settings and an efficient navigation bar.
-* **P1 (Gryffindor):** This part will contain all the elements that are part of the Gryffindor house (s-block). There will also be fun facts about the elements and the people known for discovering them.
-* **P2 (Slytherin):** This part will contain all the elements that are part of the Slytherin house (p-block). There will also be fun facts about the elements and the people.
-* **P3 (Hufflepuff):** This part will contain all the elements that are part of the Hufflepuff house (d-block). There will also be fun facts about the elements and the people.
-* **P4 (Ravenclaw):** This part will contain all the elements that are part of the Ravenclaw house (f-block). There will also be fun facts about the elements and the people.
+* **Home:** This will contain the periodic table itself which would be designed with a Harry Potter theme. Above it, there will be a short description of the website itself, while below, there will be paragraphs regarding the history of the periodic table, but presented in a “Harry Potter-like” way.
+* **P1 (Gryffindor):** This part will contain all the elements that are part of the Gryffindor house (s-block). There will also be fun facts about the elements and the people known for discovering them. This would be the same for all houses.
+* **P2 (Slytherin):** Similar to Gryffindor, but for Slytherin (p-block).
+* **P3 (Hufflepuff):** Similar to Gryffindor, but for Hufflepuff (d-block).
+* **P4 (Ravenclaw):** Similar to Gryffindor, but for Ravenclaw (f-block).
 * **P5 (Sorting Hat):** This will be a search engine, wherein if you provide an element’s name, symbol, or other properties/information about the element, it will show you what house it belongs to. 
 * **P6 (O.W.L.s):** O.W.L.s stands for the Ordinary Wizarding Levels which are a series of exams taken by Hogwarts students. This page can be used by students to study with various modes (Block Sort, Trends, Identify Element, and House Rapid-Fire). There’ll also be other features such as timers, scoring, streaks, and a review sheet with explanations.
 * **P7 (Chamber of Secrets):** This is more of a creative page (wikipedia-like) with short articles about chemistry seen in the Harry Potter world. For instance, there could be one about acids or bases in potion analogies or one about the chemistry they used for props. 
-* **P8 (About Us):** This will be a simple Harry Potter-themed about us page.
+* **P8 (Maurauder's Map):** To visually represent the site’s structure, PeriodiCastle features an interactive navigation map inspired by the Marauder’s Map. Displayed as a standalone page, it connects all major sections using circles over a parchment background. The navigation for this would be found in the footer of all pages.
+* **P9 (About Us):** This will be a simple Harry Potter-themed about us page.
+
+**Other Notes**
+1. The header will contain the favicon, name of the website, navigation bar, as well as a button with a unique feature which would switch between light and dark mode. This button is labeled as "Lumos".
+2. The footer will have social media links on the left, a hyperlink to the Maurauder's Map in the center, and sources and copyright notices on the right.
 
 ---
 
-As of now, there are two particular webpages that we are going to use JS for. Firstly would be Sorting Hat — certain inputs will cause different outputs through a decision statement. The other use for it would be for the O.W.L.s page, wherein JS script will be used for the quiz itself, as well as other unique features.
+> As of now, there are two particular webpages that we are going to use JS for. Firstly would be Sorting Hat — certain inputs will cause different outputs through a decision statement. The other use for it would be for the O.W.L.s page, wherein JS script will be used for the quiz itself, as well as other unique features.
 
 ---
 
-### Wireframe:
+### Wireframe/Webpage Design:
+**Home Page**
+![Home Page](<images/proposal/Home Page.png>)
+
+**House Pages (Gryffindor)**
+![Houses](images/proposal/Houses.png)
+
+**Sorting Hat**
+![Sorting Hat](<images/proposal/Sorting Hat.png>)
+
+**O.W.L.s**
+![O.W.L.s](images/proposal/O.W.L.s.png)
+
+**Chamber of Secrets**
+![Chamber of Secrets](<images/proposal/Chamber of Secrets.png>)
+
+**Maurauders Map**
+![Maurauders Map](<images/proposal/Maurauders Map.png>)
