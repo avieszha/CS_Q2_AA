@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PeriodiCastle • Project Proposal & Wireframes</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #f6f1e6;  
+      --ink:#222;
+      --line:#d6ccb9;
+      --card:#fffdf6;
+      --accent:#b88900;
+      --header-h: 72px;
+    }
+    [data-theme="lumos"]{
+      --bg:#0f1020;
+      --ink:#f0f1ff;
+      --line:#2a2a48;
+      --card:#171833;
+      --accent:#ffd56b;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:
+        linear-gradient(175deg, rgba(0,0,0,.03) 0 12%, transparent 12% 100%),
+        repeating-linear-gradient(0deg, rgba(0,0,0,.015) 0 28px, transparent 28px 56px),
+        var(--bg);
+      padding-top: var(--header-h);
+      scroll-behavior:smooth;
+    }
+
+    .container{max-width:1100px; margin:0 auto; padding:20px}
+    .section{padding:32px 0; border-top:1px solid var(--line); scroll-margin-top: calc(var(--header-h) + 8px);}
+
+    header.site{
+      position:fixed; top:0; left:0; right:0; z-index:10;
+      background:var(--bg);
+      border-bottom:1px solid var(--line);
+    }
+    .bar{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 20px}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800}
+    .brand span{font-family:"EB Garamond", serif; font-weight:800; letter-spacing:.2px}
+    .logo{
+      width:36px; height:36px; border-radius:10px; display:grid; place-items:center;
+      background:linear-gradient(135deg,#caa300,var(--accent));
+      color:#000; border:2px solid rgba(0,0,0,.15);
+    }
+
+    nav ul{list-style:none; display:flex; gap:14px; margin:0; padding:0}
+    a, .btn{
+      color:inherit; text-decoration:none;
+      border:2px solid var(--ink); padding:8px 12px; border-radius:12px;
+      font-weight:700; background:transparent;
+    }
+    a:hover, .btn:hover{background:rgba(0,0,0,.06)}
+    [data-theme="lumos"] a:hover, [data-theme="lumos"] .btn:hover{background:rgba(255,255,255,.08)}
+
+    h1{margin:0 0 6px; font-size:34px; font-family:"EB Garamond", serif}
+    h2{margin:6px 0 12px; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:6px; font-family:"EB Garamond", serif}
+    h3{margin:14px 0 8px; font-family:"EB Garamond", serif}
+    p{line-height:1.65; margin:0 0 10px}
+
+    .grid{display:grid; gap:16px}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:16px;
+      box-shadow:0 2px 0 rgba(0,0,0,.05);
+    }
+    .badge{
+      display:inline-block; font-size:.85rem; padding:4px 10px; border-radius:999px;
+      border:1px solid var(--accent); color:var(--accent)
+    }
+
+    .wf{border:1px dashed var(--line); border-radius:12px; padding:12px; display:grid; gap:10px; background:var(--card)}
+    .wf-toolbar{display:flex; align-items:center; justify-content:space-between; gap:10px; padding:8px; border:1px solid var(--line); border-radius:10px}
+    .wf-grid{display:grid; grid-template-columns:200px 1fr 200px; gap:12px}
+    .wf-box{min-height:120px; border:2px solid var(--line); border-radius:10px; display:grid; place-items:center; font-weight:700; color:#6b665a; text-align:center}
+    .wf-pt{display:grid; grid-template-columns:repeat(18,1fr); gap:3px}
+    .cell{aspect-ratio:1; border:1px solid var(--line); border-radius:3px}
+
+    footer.site{border-top:1px solid var(--line); padding:24px 0; margin-top:32px}
+    .social{display:flex; gap:8px}
+    .dot{width:26px; height:26px; border-radius:50%; border:1px solid var(--ink); display:grid; place-items:center; font-weight:800}
+
+    @media (max-width:900px){
+      .grid-2, .wf-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header class="site" role="banner">
+    <div class="bar container">
+      <div class="brand">
+        <div class="logo">H</div>
+        <span>PeriodiCastle • Proposal & Wireframes</span>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#proposal">Proposal</a></li>
+          <li><a href="#outline">Outline</a></li>
+          <li><a href="#js">JS Plan</a></li>
+          <li><a href="#wireframes">Wireframes</a></li>
+          <li><a class="btn" href="https://github.com/avieszha/WDProjRubidiumLustreReyes" target="_blank" rel="noopener">GitHub</a></li>
+          <li><button id="lumos" class="btn" type="button">🔆 Lumos</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="proposal" class="section">
+      <div class="card">
+        <h1>PeriodiCastle</h1>
+        <h2>Sorting Elements into The Four Houses of Chemistry</h2>
+
+        <h3>Favicon:</h3>
+        <p>
+          <img src="images/proposal/Favicon.png" alt="Favicon" style="max-width:160px;height:auto;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:6px">
+        </p>
+        <hr>
+
+        <h3>Description:</h3>
+        <p>PeriodiCastle is a whimsical and study-friendly website that transforms the periodic table into a Harry Potter-style design. Each element is “sorted” into one of four Houses of Chemistry — Gryffindor (s-block), Slytherin (p-block), Hufflepuff (d-block), and Ravenclaw (f-block) in order to aid students and learners in remembering the structure of the blocks, the trends, and their respective properties. Users can hover on an element to reveal information about it or even tap a sorting hat to classify an element by name, symbol, or property (e.g., electronegativity, metallic character). After learning, they may also challenge themselves in Quiz Mode.</p>
+        <p>Beyond the name, PeriodiCastle focuses on clear information propagation, accessible User Interface (UI), and modular JavaScript (JS) for search, sorting, and quizzes. Other unique features include audio toggles that let users play either the Harry Potter theme song or the Periodic Table song while studying, and a Lumos switch offering light/dark mode for comfort.</p>
+      </div>
+    </section>
+
+    <section id="outline" class="section">
+      <h2>Webpage Breakdown:</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Home:</strong> This will contain the periodic table itself which would be designed with a Harry Potter theme. Above it, there will be a short description of the website itself, while below, there will be paragraphs regarding the history of the periodic table, but presented in a “Harry Potter-like” way.</li>
+          <li><strong>P1 (Gryffindor):</strong> This part will contain all the elements that are part of the Gryffindor house (s-block). There will also be fun facts about the elements and the people known for discovering them. This would be the same for all houses.</li>
+          <li><strong>P2 (Slytherin):</strong> Similar to Gryffindor, but for Slytherin (p-block).</li>
+          <li><strong>P3 (Hufflepuff):</strong> Similar to Gryffindor, but for Hufflepuff (d-block).</li>
+          <li><strong>P4 (Ravenclaw):</strong> Similar to Gryffindor, but for Ravenclaw (f-block).</li>
+          <li><strong>P5 (Sorting Hat):</strong> This will be a search engine, wherein if you provide an element’s name, symbol, or other properties/information about the element, it will show you what house it belongs to. </li>
+          <li><strong>P6 (O.W.L.s):</strong> O.W.L.s stands for the Ordinary Wizarding Levels which are a series of exams taken by Hogwarts students. This page can be used by students to study with various modes (Block Sort, Trends, Identify Element, and House Rapid-Fire). There’ll also be other features such as timers, scoring, streaks, and a review sheet with explanations.</li>
+          <li><strong>P7 (Chamber of Secrets):</strong> This is more of a creative page (wikipedia-like) with short articles about chemistry seen in the Harry Potter world. For instance, there could be one about acids or bases in potion analogies or one about the chemistry they used for props. </li>
+          <li><strong>P8 (Maurauder's Map):</strong> To visually represent the site’s structure, PeriodiCastle features an interactive navigation map inspired by the Marauder’s Map. Displayed as a standalone page, it connects all major sections using circles over a parchment background. The navigation for this would be found in the footer of all pages.</li>
+          <li><strong>P9 (About Us):</strong> This will be a simple Harry Potter-themed about us page.</li>
+        </ul>
+
+        <p><strong>Other Notes</strong></p>
+        <ol>
+          <li>The header will contain the favicon, name of the website, navigation bar, as well as a button with a unique feature which would switch between light and dark mode. This button is labeled as "Lumos".</li>
+          <li>The footer will have social media links on the left, a hyperlink to the Maurauder's Map in the center, and sources and copyright notices on the right.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="js" class="section">
+      <h2>JavaScript Incorporation</h2>
+      <div class="card">
+        <blockquote style="margin:0">
+          As of now, there are two particular webpages that we are going to use JS for. Firstly would be Sorting Hat — certain inputs will cause different outputs through a decision statement. The other use for it would be for the O.W.L.s page, wherein JS script will be used for the quiz itself, as well as other unique features.
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="wireframes" class="section">
+      <h2>Initial Wireframes (HTML mocks)</h2>
+
+      <div class="card">
+        <div class="wf">
+          <div class="wf-toolbar">
+            <div class="brand"><div class="logo" style="width:26px;height:26px">H</div><strong>Home</strong></div>
+            <div style="display:flex; gap:10px; align-items:center">
+              <a class="btn" href="#">HOME</a>
+              <a class="btn" href="#">HOUSES ▾</a>
+              <a class="btn" href="#">SORTING HAT</a>
+              <a class="btn" href="#">O.W.L.s</a>
+              <a class="btn" href="#">CHAMBER</a>
+              <a class="btn" href="#">ABOUT</a>
+              <span class="btn">🔆 Lumos</span>
+            </div>
+          </div>
+
+          <h3>The Great Hall of Elements</h3>
+          <p class="badge" style="border-color:var(--line); color:inherit">Discover where each element truly belongs — s, p, d, or f</p>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn" href="#">Try the Sorting Hat</a>
+            <a class="btn" href="#">Take your O.W.L.s</a>
+            <a class="btn" href="#">Explore Houses</a>
+          </div>
+
+          <div class="wf-pt" style="margin-top:10px">
+            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+          </div>
+
+          <div class="wf-grid">
+            <div class="wf-box">Left notes</div>
+            <div class="wf-box">History / description section</div>
+            <div class="wf-box">Right notes</div>
+          </div>
+          <div class="wf-toolbar"><span>Footer • Social • Marauder's Map • Sources ©</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="wf">
+          <div class="wf-toolbar">
+            <div class="brand"><div class="logo" style="width:26px;height:26px">H</div><strong>House Page — Gryffindor (S-block)</strong></div>
+            <span class="btn">🔆 Lumos</span>
+          </div>
+          <div class="wf-box" style="height:64px">House banner</div>
+          <p style="margin:0; color:#6b665a">Bravery, energy, and explosive reactivity define these metals.</p>
+          <div class="wf-box" style="min-height:120px">S-block tiles (Be, Mg, Ca, Sr, Ba, Ra • Li, Na, K, Rb, Cs, Fr)</div>
+          <div class="grid grid-2">
+            <div class="wf-box">Fun Facts (hover → reveal)</div>
+            <div class="wf-box">Study Tools (Quiz • Compare • Return)</div>
+          </div>
+          <div class="wf-toolbar"><span>Footer • refs</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="wf">
+          <div class="wf-toolbar">
+            <div class="brand"><div class="logo" style="width:26px;height:26px">H</div><strong>Sorting Hat</strong></div>
+            <span class="btn">🔆 Lumos</span>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-box">Input: name / symbol / property</div>
+            <div class="wf-box">SORT ME (button)</div>
+            <div class="wf-box">Reset</div>
+          </div>
+          <div class="wf-box" style="min-height:120px">Result: “You belong to Gryffindor” + reason + links</div>
+          <div class="wf-toolbar"><span>Footer • refs</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="wf">
+          <div class="wf-toolbar">
+            <div class="brand"><div class="logo" style="width:26px;height:26px">H</div><strong>O.W.L.s — Quiz Modes</strong></div>
+            <span class="btn">🔆 Lumos</span>
+          </div>
+          <div class="grid grid-2">
+            <div class="wf-box">Mode Select (Block Sort • Trends • Identify • Rapid-Fire)</div>
+            <div class="wf-box">Question area with 4 choices</div>
+          </div>
+          <div class="wf-grid">
+            <div class="wf-box">Score</div>
+            <div class="wf-box">Timer</div>
+            <div class="wf-box">Lives</div>
+          </div>
+          <div class="wf-box">Review Sheet (after quiz)</div>
+          <div class="wf-toolbar"><span>Footer • refs</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="wf">
+          <div class="wf-toolbar">
+            <div class="brand"><div class="logo" style="width:26px;height:26px">H</div><strong>Chamber of Secrets — The Enchanted Library</strong></div>
+            <span class="btn">🔆 Lumos</span>
+          </div>
+          <div class="grid grid-2">
+            <div class="wf-box">Sidebar: Potions • Props • Materials • Legends</div>
+            <div class="wf-box">Article View + Mini-Quiz</div>
+          </div>
+          <div class="wf-toolbar"><span>Footer • refs</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="wf">
+          <div class="wf-toolbar">
+            <div class="brand"><div class="logo" style="width:26px;height:26px">H</div><strong>Marauder’s Map (Navigation)</strong></div>
+            <span class="btn">🔆 Lumos</span>
+          </div>
+          <div class="grid grid-3">
+            <div class="wf-box">HOME</div>
+            <div class="wf-box">MAP VISUAL</div>
+            <div class="wf-box">HOUSES</div>
+          </div>
+          <div class="grid grid-3">
+            <div class="wf-box">O.W.L.s</div>
+            <div class="wf-box">CHAMBER</div>
+            <div class="wf-box">ABOUT</div>
+          </div>
+          <div class="wf-toolbar"><span>Footer • refs</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap">
+      <div class="social">
+        <div class="dot">f</div>
+        <div class="dot">ig</div>
+        <div class="dot">yt</div>
+      </div>
+      <a class="btn" href="#wireframes">Marauder’s Map</a>
+      <div style="text-align:right">
+        <div>References • Sources</div>
+        <div style="opacity:.7">© Enzo Lustre &amp; Avi Reyes 2025</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+(function(){
+      const key = 'periodicastle.theme';
+      const root = document.documentElement;
+      const btn  = document.getElementById('lumos');
+      function setLabel(){ btn.textContent = root.getAttribute('data-theme') === 'lumos' ? '🌙 Nox' : '🔆 Lumos'; }
+      if(localStorage.getItem(key) === 'lumos'){ root.setAttribute('data-theme','lumos'); }
+      setLabel();
+      btn.addEventListener('click', ()=>{
+        const on = root.getAttribute('data-theme') === 'lumos';
+        if(on){ root.removeAttribute('data-theme'); localStorage.removeItem(key); }
+        else{ root.setAttribute('data-theme','lumos'); localStorage.setItem(key,'lumos'); }
+        setLabel();
+      });
+    })();
+  </script>
+</body>
+</html>
