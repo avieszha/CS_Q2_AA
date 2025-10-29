@@ -56,5 +56,3 @@ Beyond the name, PeriodiCastle focuses on clear information propagation, accessi
 
 **Maurauders Map**
 ![Maurauders Map](<images/proposal/Maurauders Map.png>)
-
-<a href="design.html" target="_blank" rel="noopener">Open the HTML Design Page</a>
