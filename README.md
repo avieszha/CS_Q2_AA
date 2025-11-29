@@ -4,7 +4,7 @@
 
 ### Favicon: 
 
-![Favicon](images/proposal/Favicon.png)
+![Favicon](assets/proposal/Favicon.png)
 
 ---
 
@@ -40,21 +40,21 @@ Beyond the name, PeriodiCastle focuses on clear information propagation, accessi
 
 ### Wireframe/Webpage Design:
 **Home Page**
-![Home Page](<images/proposal/Home Page.png>)
+![Home Page](<assets/proposal/Home Page.png>)
 
 **House Pages (Gryffindor)**
-![Houses](images/proposal/Houses.png)
+![Houses](assets/proposal/Houses.png)
 
 **Sorting Hat**
-![Sorting Hat](<images/proposal/Sorting Hat.png>)
+![Sorting Hat](<assets/proposal/Sorting Hat.png>)
 
 **O.W.L.s**
-![O.W.L.s](images/proposal/O.W.L.s.png)
+![O.W.L.s](assets/proposal/O.W.L.s.png)
 
 **Chamber of Secrets**
-![Chamber of Secrets](<images/proposal/Chamber of Secrets.png>)
+![Chamber of Secrets](<assets/proposal/Chamber of Secrets.png>)
 
 **Maurauders Map**
-![Maurauders Map](<images/proposal/Maurauders Map.png>)
+![Maurauders Map](<assets/proposal/Maurauders Map.png>)
 
 <a href="design.html" target="_blank" rel="noopener">Open the HTML Design Page</a>
